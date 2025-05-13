@@ -1,0 +1,39 @@
+
+{
+    "info": {
+        "_postman_id": "f9d8bbff-7a49-469d-bf82-cc58cd79f3c8",
+        "name": "Healthify API Tests",
+        "description": "API tests for the Healthify registration endpoint",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "POST /register",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:5000/register",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "register"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{"username":"testUser","password":"testPassword123"}"
+                }
+            },
+            "response": []
+        }
+    ]
+}
